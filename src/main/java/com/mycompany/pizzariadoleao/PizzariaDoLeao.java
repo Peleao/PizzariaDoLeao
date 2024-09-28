@@ -6,11 +6,12 @@ package com.mycompany.pizzariadoleao;
 
 /**
  *
- * @author Peleão Prapão
+ * @author Pedro Andrade Pereira Leão 202035008
  */
 public class PizzariaDoLeao {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        new TelaInicial().setVisible(true);
     }
 }
