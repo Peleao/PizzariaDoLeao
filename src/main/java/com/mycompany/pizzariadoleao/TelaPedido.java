@@ -23,7 +23,7 @@ import javax.swing.JScrollPane;
 
 /**
  *
- * @author Peleão Prapão
+* @author Pedro Andrade Pereira Leão 202035008
  */
 public class TelaPedido extends JFrame{
     

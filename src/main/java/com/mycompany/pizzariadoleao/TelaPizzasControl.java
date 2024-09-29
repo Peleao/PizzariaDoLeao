@@ -104,8 +104,7 @@ public class TelaPizzasControl extends JFrame {
                 for (Pizza pizza : pizzas) {
                     modeloPizzas.addElement(pizza.getNome());
                 }
-                listaPizzas = new JList<>(modeloPizzas);
-                JScrollPane scrollPizzas = new JScrollPane(listaPizzas);
+                
                 addPizzaDialog.dispose(); 
             }
         });
@@ -207,8 +206,7 @@ public class TelaPizzasControl extends JFrame {
                         for (Pizza pizza : pizzas) {
                             modeloPizzas.addElement(pizza.getNome());
                         }
-                        listaPizzas = new JList<>(modeloPizzas);
-                        JScrollPane scrollPizzas = new JScrollPane(listaPizzas);
+                        
                         
                     }
                 }

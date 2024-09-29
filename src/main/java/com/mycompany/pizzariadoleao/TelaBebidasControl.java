@@ -100,8 +100,7 @@ public class TelaBebidasControl extends JFrame {
                 for (Bebida bebida : bebidas) {
                     modeloBebidas.addElement(bebida.getNome());
                 }
-                listaBebidas = new JList<>(modeloBebidas);
-                JScrollPane scrollBebidas = new JScrollPane(listaBebidas);
+                
                 addBebidaDialog.dispose(); 
             }
         });
@@ -192,8 +191,7 @@ public class TelaBebidasControl extends JFrame {
                         for (Bebida bebida : bebidas) {
                             modeloBebidas.addElement(bebida.getNome());
                         }
-                        listaBebidas = new JList<>(modeloBebidas);
-                        JScrollPane scrollBebidas = new JScrollPane(listaBebidas);
+                        
                         
                     }else{
                         JFrame mainFrame = new JFrame();

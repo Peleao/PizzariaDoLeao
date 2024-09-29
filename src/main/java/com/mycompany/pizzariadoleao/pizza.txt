@@ -1,2 +1,4 @@
-cogumelos , cogumelos - mussarela , 25.0
 baiana , calabresa - cebola , 35.0
+Frango catupiry , Frango - catupiry - cebola , 30.0
+Marguerita , Mussarela - manjericao , 40.0
+Da casa , calabresa - frango - bacon - mussarela - catupiry , 50.0

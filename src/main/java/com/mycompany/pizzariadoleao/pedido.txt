@@ -1,3 +1,6 @@
 
 
 
+Pizzas: Da casa  , Bebidas: Guarana 2l  , Endereco:  Rua aristoteles braga - 85 , 62.0
+Pizzas: Frango catupiry  , Da casa  , Bebidas: Guarana 2l  , Suco de Laranja 500ml  , Endereco:  Rua Cel Ricardo Martins - 178 , 100.0
+Pizzas: Frango catupiry  , Bebidas: Guarana 2l  , Endereco:  Avenida Afonso Pena , 42.0

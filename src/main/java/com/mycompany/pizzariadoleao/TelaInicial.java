@@ -28,7 +28,7 @@ public class TelaInicial extends JFrame{
         gbc.insets = new Insets(10, 10, 10, 10); 
 
         
-        JLabel titulo = new JLabel("Escolha uma opção");
+        JLabel titulo = new JLabel("Bem vindo!");
         titulo.setFont(new Font("Arial", Font.BOLD, 18));
         gbc.gridx = 0;
         gbc.gridy = 0;

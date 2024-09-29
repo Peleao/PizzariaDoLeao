@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -51,7 +53,16 @@ public class Cliente {
     public void setTelefone(String id) {
         this.telefone = id;
     }
-    
+    public void validaTelefone(String tel) throws InvalidoException{
+        String regex = "^\\d{2}\\d{4,5}\\d{4}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(tel);
+        if(matcher.matches()){
+            setTelefone(tel);
+        }else{
+            throw new InvalidoException();
+        }
+    }
     public void salvar(){
         
         String diretorioTrabalho = System.getProperty("user.dir");        

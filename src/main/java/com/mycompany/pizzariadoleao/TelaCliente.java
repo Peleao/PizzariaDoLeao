@@ -88,11 +88,20 @@ public class TelaCliente extends JFrame {
                 String telefone = campoTelefone.getText();
 
                 Cliente cliente = new Cliente(nome, endereco, telefone);
-                cliente.salvar();
+                try{                    
+                    cliente.validaTelefone(telefone);
+                    cliente.salvar();
+                    campoNome.setText("");
+                    campoEndereco.setText("");
+                    campoTelefone.setText("");
+                }catch(InvalidoException ex){
+                    JOptionPane.showMessageDialog(rootPane, "Telefone Invalido, formato esperado : NNNNNNNN");
+                }finally{
+                    
+                }
+                
 
-                campoNome.setText("");
-                campoEndereco.setText("");
-                campoTelefone.setText("");
+                
             }
         });
 
