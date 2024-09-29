@@ -8,6 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 /**
  *
@@ -50,10 +51,33 @@ public class TelaInicial extends JFrame{
         
         botaoLoja.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) {   
+                JFrame frame = new JFrame("Tela Principal");
+                JDialog dialogoSenha = new JDialog(frame, "Insira sua Senha", true);
+                dialogoSenha.setSize(300, 150);
+                dialogoSenha.setLayout(new FlowLayout());
+                JLabel labelSenha = new JLabel("Senha:");
+                JPasswordField campoSenha = new JPasswordField(15);
+                JButton botaoConfirmar = new JButton("Confirmar");
+                botaoConfirmar.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    char[] senha = campoSenha.getPassword();
+                    char[] verifica = {'1','2','3'};
+                    if(Arrays.equals(senha, verifica)){
+                        new TelaLoja().setVisible(true);
+                        dispose();
+                    }
+                    dialogoSenha.dispose();
+                }
+                });
+                dialogoSenha.add(labelSenha);
+                dialogoSenha.add(campoSenha);
+                dialogoSenha.add(botaoConfirmar);
+                dialogoSenha.setLocationRelativeTo(frame);
+                dialogoSenha.setVisible(true);
+        
                 
-                new TelaLoja().setVisible(true);
-                dispose(); 
             }
         });
 

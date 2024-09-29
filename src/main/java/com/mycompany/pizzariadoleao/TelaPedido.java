@@ -141,6 +141,7 @@ public class TelaPedido extends JFrame{
                 dispose(); 
             }
         });
+        painelBotoes.add(botaoVoltar);        
         
         
         botaoFinalizarPedido.addActionListener(new ActionListener() {

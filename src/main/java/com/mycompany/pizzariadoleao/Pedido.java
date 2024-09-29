@@ -86,7 +86,7 @@ public class Pedido {
         for (Bebida bebida : this.bebidas) {
             nomes.append(bebida.getNome()).append(" , ");
         }                   
-        String conteudo = nomes.toString()+"ender "+this.getEndereco()+" , "+this.getPrecoTotal();
+        String conteudo = nomes.toString()+"Endereco: "+this.getEndereco()+" , "+this.getPrecoTotal();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(caminho, true))) {
             writer.write(conteudo);            
             writer.newLine(); 

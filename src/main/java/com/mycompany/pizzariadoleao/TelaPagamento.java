@@ -86,7 +86,18 @@ public class TelaPagamento extends JFrame {
                 processarCartao();
             }
         });
-        add(botaoConfirmar, BorderLayout.SOUTH);
+        JButton botaoVoltar = new JButton("Voltar");
+        botaoVoltar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new TelaPedido().setVisible(true);
+                dispose(); 
+            }
+        });
+        JPanel painelBotoes = new JPanel();
+        painelBotoes.add(botaoVoltar);   
+        painelBotoes.add(botaoConfirmar);
+        add(painelBotoes, BorderLayout.SOUTH);
     }
 
     private JPanel criarPainelDinheiro() {
