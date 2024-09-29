@@ -20,12 +20,12 @@ import java.util.List;
 public class Cliente {
     private String nome;
     private String endereco;
-    private int id;
+    private String telefone;
 
-    public Cliente(String nome, String endereco, int id) {
+    public Cliente(String nome, String endereco, String id) {
         this.nome = nome;
         this.endereco = endereco;
-        this.id = id;
+        this.telefone = id;
     }
 
     public String getNome() {
@@ -44,19 +44,19 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    public int getId() {
-        return id;
+    public String getTelefone() {
+        return this.telefone;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTelefone(String id) {
+        this.telefone = id;
     }
     
     public void salvar(){
         
         String diretorioTrabalho = System.getProperty("user.dir");        
         String caminho = Paths.get(diretorioTrabalho,"src","main","java","com","mycompany","pizzariadoleao", "cliente.txt").toString();    
-        String conteudo = this.getId()+" , "+this.getNome()+" , "+this.getEndereco();
+        String conteudo = this.getTelefone()+" , "+this.getNome()+" , "+this.getEndereco();
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(caminho, true))) {
             writer.write(conteudo);            
