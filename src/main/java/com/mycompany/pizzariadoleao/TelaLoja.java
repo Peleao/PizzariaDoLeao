@@ -18,7 +18,7 @@ import java.awt.event.ActionListener;
 public class TelaLoja extends JFrame {
     public TelaLoja() {
         setTitle("Tela da Loja");
-        setSize(300, 200);
+        setSize(600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         JPanel painel = new JPanel();

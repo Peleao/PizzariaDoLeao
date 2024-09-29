@@ -18,7 +18,7 @@ public class TelaInicial extends JFrame{
     public TelaInicial() {
         
         setTitle("Tela Inicial");
-        setSize(400, 200);
+        setSize(800, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null); 
 

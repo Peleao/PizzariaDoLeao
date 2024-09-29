@@ -31,7 +31,7 @@ public class TelaVerPedidos extends JFrame {
     
     public TelaVerPedidos (){
         setTitle("Controle de pedidos");
-        setSize(500, 400);
+        setSize(1000, 800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         String diretorioTrabalho = System.getProperty("user.dir");        

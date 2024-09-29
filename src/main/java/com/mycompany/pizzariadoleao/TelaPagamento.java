@@ -37,7 +37,7 @@ public class TelaPagamento extends JFrame {
         
         
         setTitle("Pagamento");
-        setSize(400, 400);
+        setSize(800, 800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null); 
         setLayout(new BorderLayout(10, 10));

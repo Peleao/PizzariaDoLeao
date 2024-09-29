@@ -28,7 +28,7 @@ public class TelaCliente extends JFrame {
 
     public TelaCliente() {
         setTitle("Cadastro de Cliente");
-        setSize(400, 300);
+        setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);  
         setLayout(new BorderLayout(10, 10)); 
@@ -95,7 +95,7 @@ public class TelaCliente extends JFrame {
                     campoEndereco.setText("");
                     campoTelefone.setText("");
                 }catch(InvalidoException ex){
-                    JOptionPane.showMessageDialog(rootPane, "Telefone Invalido, formato esperado : NNNNNNNN");
+                    JOptionPane.showMessageDialog(rootPane, "Telefone Invalido, formato esperado : NNNNNNNNNN");
                 }finally{
                     
                 }
